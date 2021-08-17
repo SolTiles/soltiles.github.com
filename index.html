@@ -4,17 +4,33 @@
     <title>SolTiles</title>
     <style>
     body {
-      margin-top: 20px;
+      margin-top: 100px;
       background: black;
       color: white;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
     }
+
+    body::before {
+      position: fixed;
+      height: 20px;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgb(0, 255, 163);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 255, 163, 1) 0%,
+        rgba(3, 225, 255, 1) 50%,
+        rgba(220, 31, 255, 1) 100%
+      );
+    }
     </style>
   </head>
   <body>
     <img src="./logo.png" />
-    <h1>Coming soon...</h1>
+    <h1>Coming soon</h1>
     <p>A 100x100 tiled wall on the Solana blockchain.</p>
   </body>
 </html>
